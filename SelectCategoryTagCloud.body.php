@@ -37,7 +37,7 @@ global $wgOut, $wgParser, $wgRequest, $wgSelectCategoryTagCloudCloud;
 		# Get ALL categories from wiki:
 //		$m_allCats = fnSelectCategoryGetAllCategories();
 		# Load system messages:
-		fnSelectCategoryMessageHook();
+//		fnSelectCategoryMessageHook();
 		# Get the right member variables, depending on if we're on an upload form or not:
 		if( !$m_isUpload ) {
 			# Check if page is subpage once to save method calls later:

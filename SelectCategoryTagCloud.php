@@ -70,7 +70,9 @@ if( !isset( $wgSelectCategoryEnableSubpages ) ) $wgSelectCategoryEnableSubpages 
 # $wgCategorySuggestNumToSend  - max number of suggestions to send to browser - not implemented
 # $wgCategorySuggestUnaddedWarning - not implemented
 # $wgCategorySuggestCloud : cloud - use cloud ; anything else - list
-#
+
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['SelectCategoryTagCloud'] = $dir . 'SelectCategory.i18n.php';
 $wgSelectCategoryTagCloudjs 		= $wgScriptPath . '/extensions/SelectCategoryTagCloud/SelectCategoryTagCloud.js' ;
 $wgSelectCategoryTagCloudcss 		= $wgScriptPath . '/extensions/SelectCategoryTagCloud/SelectCategoryTagCloud.css';
 $wgSelectCategoryTagCloudNumToSend 	= '50';
@@ -83,7 +85,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name'		=> 'SelectCategoryTagCloud (version 1.4.2)',
 	'author'	=> 'Andreas Rindler <mediawiki at jenandi dot com>',
 	'url'		=> 'http://www.mediawiki.org/wiki/Extension:SelectCategoryTagCloud',
-	'description'	=> 'Adds a category selection tag cloud to the edit and upload pages and enables a Google Suggest like completion of categories/typeahead entered by the user. Based on WikiCategoryTagCloud, YetAnotherTagCloud and SelectCategory.'
+	'descriptionmsg'	=> 'selectcategory-desc',
 );
 ## register Ajax function to be called from Javascript file
 $wgAjaxExportList[] = 'fnSelectCategoryTagCloudAjax';
@@ -146,7 +148,7 @@ function fnSelectCategory() {
 	# Hook our own CSS:
 	$wgHooks['OutputPageParserOutput'][] = 'fnSelectCategoryOutputHook';
 	# Hook up local messages:
-	$wgHooks['LoadAllMessages'][] = 'fnSelectCategoryMessageHook';
+	#$wgHooks['LoadAllMessages'][] = 'fnSelectCategoryMessageHook';
 }
 
 ## Load the file containing the hook functions:
