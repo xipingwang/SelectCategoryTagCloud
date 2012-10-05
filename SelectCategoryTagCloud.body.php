@@ -55,7 +55,7 @@ global $wgOut, $wgParser, $wgRequest, $wgSelectCategoryTagCloudCloud;
 			# Never ever use editFormTextTop here as it resides outside the <form> so we will never get contents
 			$m_place = 'editFormTextAfterWarn';
 			# Print the localised title for the select box:
-			$m_textBefore = '<b>'. wfMsg( 'categorysuggest-title' ) . '</b>:';
+			$m_textBefore = '<b>'. wfMsg( 'selectcategory-title' ) . '</b>:';
 		} else	{
 			# No need to get categories:
 			$m_pageCats = array();
@@ -64,7 +64,7 @@ global $wgOut, $wgParser, $wgRequest, $wgSelectCategoryTagCloudCloud;
 			$m_place = 'uploadFormTextAfterSummary';
 		}
 			#ADD TOOLTIP JAVASCRIPT
-		$m_pageObj->$m_place .= "<script type=\"text/javascript\" src=\"" . $wgScriptPath . "/extensions/tooltips/wz_tooltip.js\"></script>\n";
+		$m_pageObj->$m_place .= "<script type=\"text/javascript\" src=\"" . $wgScriptPath . "/extensions/SelectCategoryTagCloud/wz_tooltip.js\"></script>\n";
 		
 		#ADD JAVASCRIPT
 		$m_pageObj->$m_place .= "<script type=\"text/javascript\" src=\"" . $wgScriptPath . "/extensions/SelectCategoryTagCloud/SelectCategoryTagCloud.js\"></script>\n<script type=\"text/javascript\" src=\"" . $wgScriptPath . "/extensions/SelectCategoryTagCloud/tabs.js\"></script>\n";
