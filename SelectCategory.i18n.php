@@ -22,4 +22,37 @@ $messages['en'] = array(
 
 );
 
+# translation done by Manuel Schneider <manuel.schneider@wikimedia.ch>
+$messages['de'] = array(
+  'selectcategory-title'	    => 'Kategorien auswählen',
+  'selectcategory-subtitle'	  => 'Shift-Maus um mehrere nachfolgende Einträge zu (de-)selektieren, Strg-Maus um einzelne Einträge zu (de-)selektieren.',
+);
+
+
+# translation done by Marius Engler <marius.engler@coop.ch>
+$messages['fr'] = array(
+  'selectcategory-title'      => 'Choix de catégories',
+  'selectcategory-subtitle'   => 'Shift+Souris afin de (de)sélectionner plusieurs catégories d\'affilées, Ctrl+Souris afin de (de)sélectionner des catégories.',
+);
+
+# translation done by Manuel Schneider <manuel.schneider@wikimedia.ch>
+$messages['gsw'] = array(
+  'selectcategory-title'	    => 'Kategori ussueche',
+  'selectcategory-subtitle'	  => 'Gross-Muus go verschiedeni Iiträg hintrenander go uswähle, Strg-Muus go einzelni Iiträg go uswähle',
+);
+
+# translation done by Marius Engler <marius.engler@coop.ch>
+$messages['it'] = array(
+  'selectcategory-title'      => 'Selezionare le categorie',
+  'selectcategory-subtitle'   => 'Shift-mouse per selezionare le entrate attigue multiple, Ctrl-mouse per selezionare le entrate non-attigue.',
+);
+
+
+# translation done by Helix84
+$messages['sk'] = array(
+  'selectcategory-title'	    => 'Vybrať kategórie',
+  'selectcategory-subtitle'	  => 'Shift+kliknutie označí súvislú skupinu položiek, ctrl+kliknutie označí jednotlivé nesúvislé položky.',
+);
+
+
 ?>
